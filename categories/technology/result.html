@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Result Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Updated Paragraph:</h2>
+  <p id="outputParagraph"></p>
+
+  <script>
+    // Retrieve data from local storage
+    var storedData = localStorage.getItem("projectData");
+
+    if (storedData) {
+      // Parse JSON data
+      var projectData = JSON.parse(storedData);
+
+      // Display data in the paragraph
+      var outputParagraph = document.getElementById("outputParagraph");
+      outputParagraph.innerHTML = "Project Name: " + projectData.projectName + "<br>" +
+                                  "Project Requirements: " + projectData.projectRequirements + "<br>" +
+                                  "Project Description: " + projectData.projectDescription;
+    } else {
+      // If no data is available, show a message
+      var outputParagraph = document.getElementById("outputParagraph");
+      outputParagraph.innerHTML = "No project data available.";
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Quantum Computing</title>
+  <style>
+    :root{
+      --accent1: #4a00e0;
+      --accent2: #8e2de2;
+      --card-bg: #fff;
+      --page-bg: #eef2f7;
+      --text: #333;
+    }
+
+    *{box-sizing: border-box;}
+
+    body{
+      margin:0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: var(--page-bg);
+      color: var(--text);
+      -webkit-font-smoothing:antialiased;
+    }
+
+    .headbox{
+      background: linear-gradient(135deg, var(--accent1), var(--accent2));
+      color:#fff;
+      text-align:center;
+      padding: 44px 20px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.16);
+    }
+    .headbox h1{ margin:0; font-size:34px; letter-spacing:0.6px; }
+
+    /* layout */
+    .container{
+      max-width:1100px;
+      margin:28px auto;
+      padding: 0 18px;
+    }
+
+    .info{
+      display:flex;
+      gap:28px;
+      align-items:center; /* vertical center image & text */
+      justify-content:space-between;
+    }
+
+    .overview{
+      flex:1 1 60%;
+      background: var(--card-bg);
+      padding:24px;
+      border-radius:12px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+    }
+    .overview h4{
+      margin:0 0 12px;
+      color:#5a2ca0;
+      font-size:22px;
+    }
+    .overview p{
+      margin:0;
+      line-height:1.65;
+      font-size:16px;
+    }
+
+    /* image column */
+    .img{
+      flex:0 0 320px; /* fixed-ish width so layout is predictable */
+      display:flex;
+      align-items:center;      /* vertical center inside column */
+      justify-content:center;  /* horizontal center */
+      padding:8px;
+    }
+    .img img{
+      width:100%;
+      max-width:320px;
+      height:auto;
+      border-radius:12px;
+      display:block;
+      box-shadow: 0 8px 22px rgba(0,0,0,0.12);
+      object-fit:cover;
+    }
+
+    /* key points card */
+    .kp{
+      margin-top:22px;
+      background: var(--card-bg);
+      padding:20px 24px;
+      border-radius:12px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+    }
+    .kp p.lead{ font-size:18px; line-height:1.9; margin:0 0 12px; }
+    .kp h5{
+      margin:16px 0 6px;
+      color:#6a1b9a;
+      font-size:18px;
+    }
+    .kp p{ margin:0 0 10px; line-height:1.7; color:#444; font-size:15.5px; }
+
+    /* small screens: stack and center */
+    @media (max-width:820px){
+      .info{ flex-direction:column-reverse; align-items:center; }
+      .overview{ width:100%; padding:20px; }
+      .img{ width:100%; max-width:420px; padding:6px 0 18px; }
+      .container{ padding: 0 14px; }
+      .headbox{ padding:28px 14px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="headbox">
+    <h1>Quantum Computing</h1>
+  </div>
+
+  <div class="container">
+    <div class="info">
+      <div class="overview">
+        <h4>Introduction</h4>
+        <p>
+          Quantum computing uses quantum-mechanical phenomena — like <strong>superposition</strong> and
+          <strong>entanglement</strong> — to process information. Qubits can hold more than one state at a time,
+          allowing quantum machines to explore many possibilities simultaneously. This unlocks huge speedups
+          for problems in cryptography, simulation, optimization and material design.
+        </p>
+
+        <p style="margin-top:12px;">
+          Today quantum hardware is still maturing (decoherence, error rates and cooling requirements are
+          challenging), but progress in algorithms and engineering is accelerating practical use-cases.
+        </p>
+      </div>
+
+      <div class="img">
+        <!-- Make sure this relative path is correct for your file location -->
+        <img src="../../assets/images/qc1.jpeg" alt="Quantum computing illustration">
+      </div>
+    </div>
+
+    <div class="kp" aria-labelledby="key-concepts">
+      <p class="lead">Key concepts & characteristics:</p>
+
+      <h5>⚛ Superposition</h5>
+      <p>Qubits can represent multiple values at once, enabling parallel exploration of possibilities.</p>
+
+      <h5>⚛ Entanglement</h5>
+      <p>Entangled qubits share correlated states — manipulating one affects the others instantly.</p>
+
+      <h5>⚛ Quantum Gates</h5>
+      <p>Operations (gates) rotate and interfere quantum states — basic building blocks for quantum programs.</p>
+
+      <h5>⚛ Quantum Algorithms</h5>
+      <p>Algorithms like Shor’s and Grover’s show quantum advantage for factoring and unstructured search.</p>
+
+      <h5>⚛ Limitations</h5>
+      <p>Current devices need extreme cooling, suffer noise and require error correction to be fully practical.</p>
+    </div>
+  </div>
+
+</body>
+</html>

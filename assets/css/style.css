@@ -1,0 +1,564 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    font-size: 12px;
+}
+#body{
+    background-image: url("../images/college-image.jpeg");
+    width: 100%;
+    height: 100%;
+    /* background-color: #30a6e6; */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+body a{
+    text-decoration: none;
+}
+body li{
+    list-style: none;
+}
+.submain2{
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    z-index: 10;
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+}
+.dropdownmenu ul, .dropdownmenu li{
+    margin: 0;
+    padding: 0;
+}
+.dropdownmenu{
+    margin-top: 30px;
+}
+.dropdownmenu ul{
+    list-style: none;
+    width: 100%;
+
+}
+.dropdownmenu li{
+    float: left;
+    position: relative;
+    width: auto;
+}
+.dropdownmenu a{
+    font-size: 22px;
+    /* background: #30a6e6; */
+    color: white;
+    display: block;
+    padding: 10px 40px;
+    border-radius: 2px;
+    text-align: center;
+    text-decoration: none;
+    transition: all o.25s ease;
+}
+.dropdownmenu li:hover a{
+    background: whitesmoke;
+    color: black;
+
+}
+#submenu{
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 5px;
+    visibility: hidden;
+    z-index: 1;
+}
+li:hover ul#submenu{
+    opacity: 1;
+    top: 45px;
+    visibility: visible;
+}
+#submenu a:hover{
+    background-color: black;
+    color: whitesmoke;
+}
+
+.logo-img{
+    height: 70%;
+    width: 70px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+/*  for the slideshow */
+.mySlides {
+    display: none;
+}
+.mySlides img{
+    height: 740px;
+    width: 1536px;
+}
+/* Style for navigation arrows */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.rec{
+    height: 1800px;
+    width: 79%;
+    background-color: whitesmoke;
+    margin: 0 auto;
+    margin-top: 180px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.subrec{
+    border-radius: 4px;
+    height: 300px;
+    width: 361px;
+    background-color: white;
+}
+.subrec:hover{
+    z-index: 0;
+    -webkit-box-shadow: 0px 0px 23px 4px rgba(0,0,0,0.4);
+-moz-box-shadow: 0px 0px 23px 4px rgba(0,0,0,0.4);
+box-shadow: 0px 0px 23px 4px rgba(0,0,0,0.4);
+transform: translateY(-10px);
+transition: 0.5ms ease;
+}
+.tech-names{
+    font-size: 30px;
+    margin-top: 50px;
+    margin-right: 16px;
+}
+.tech-content{
+    margin: 20px;
+    font-size: 18px;
+}
+.rec1{
+    height: 60px;
+    width: 50px;
+    margin-left: 18px;
+    background-color: blueviolet;
+}
+.con-main{
+    display: flex;
+    gap: 24px;
+}
+.cir1{
+    margin-top: 40px;
+    margin-left: -4px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+    background-color: rgb(204, 170, 235);
+}
+.cir1 i{
+    font-size: 30px;
+    color: white;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.box1{
+    height: 12px;
+    width: 12px;
+    background-color: blueviolet;
+}
+.box{
+    margin-left: 20px;
+    width: 340px;
+    display: flex;
+    column-gap:200px;
+}
+.box a{
+    font-size: 16px;
+    color: blueviolet;
+}
+.year{
+    margin-left: 20px;
+}
+.aboutmain{
+    height: auto;
+    width: 100%;
+    padding-top: 200px;
+}
+.rec2,.box2{
+    background-color: rgb(255, 153, 52);
+}
+.cir2{
+    background: rgb(255, 204, 153);
+}
+.box2 a,div .read2{
+    color: rgb(255, 153, 52);
+}
+.rec3,.box3{
+    background: rgb(51, 153, 255);
+}
+.cir3{
+    background: rgb(153, 204, 255);
+}
+.box3 a,div .read3{
+    color: rgb(51, 153, 255);
+}
+.rec4,.box4{
+    background: rgb(255, 102, 102);
+}
+.cir4{
+    background: rgb(255, 153, 153);
+}
+.box4 a,div .read4{
+    color: rgb(255, 102, 102);
+}
+.rec5,.box5{
+    background: rgb(102, 255, 102);
+}
+.cir5{
+    background: rgb(204, 255, 204);
+}
+.box5 a,div .read5{
+    color: rgb(102, 255, 102);
+}
+.rec6,.box6{
+    background: rgb(255, 102, 255);
+}
+.cir6{
+    background: rgb(255, 183, 255);
+}
+.box6 a,div .read6{
+    color: rgb(255, 102, 255);
+}
+.rec7,.box7{
+    background: rgb(102, 102, 255);
+}
+.cir7{
+    background: rgb(153, 186, 255);
+}
+.box7 a,div .read7{
+    color: rgb(102, 102, 255);
+}
+.rec8,.box8{
+    background: rgb(102, 255, 255);
+}
+.cir8{
+    background: rgb(204, 255, 255);
+}
+.box8 a,div .read8{
+    color: rgb(102, 255, 255);
+}
+.rec9,.box9{
+    background: blueviolet;
+}
+.cir9{
+    background: rgb(204, 170, 235);
+}
+.box9 a,div .read9{
+    color: blueviolet;
+}
+.rec10,.box10{
+    background: rgb(178, 255, 102);
+}
+.cir10{
+    background: rgb(229, 255, 204);
+}
+.box10 a,div .read10{
+    color: rgb(178, 255, 102);
+}
+.rec11,.box11{
+    background: rgb(255, 102, 178);
+}
+.cir11{
+    background: rgb(255, 173, 204);
+}
+.box11 a,div .read11{
+    color: rgb(255, 102, 178);
+}
+.rec12,.box12{
+    background: rgb(255, 153, 52);
+}
+.cir12{
+    background: rgb(255, 204, 153);
+}
+.box12 a,div .read12{
+    color: rgb(255, 153, 52);
+}
+.rec13,.box13{
+    background: blueviolet;
+}
+.cir13{
+    background: rgb(204, 170, 235);
+}
+.box13 a,div .read13{
+    color: blueviolet;
+}
+.rec14,.box14{
+    background: rgb(51, 153, 255);
+}
+.cir14{
+    background: rgb(153, 204, 255);
+}
+.box14 a,div .read14{
+    color: rgb(51, 153, 255);
+}
+.rec15,.box15{
+    background: rgb(255, 102, 102);
+}
+.cir15{
+    background: rgb(255, 153, 153);
+}
+.box15 a,div .read15{
+    color: rgb(255, 102, 102);
+}
+.aboutmain1{
+    height: 540px;
+    width: 100%;
+    margin-top: -100px;
+    background-color: rgb(235, 231, 231);
+    color: black;
+    display: flex;
+    column-gap: 140px;
+}
+.about-main2{
+    height: 400px;
+    width: 500px;
+    padding: 50px;
+    margin-top: 60px;
+    margin-left: 160px;
+    font-size: 17px;
+    line-height:24px;
+}
+.about-image{
+    height: 360px;
+    width: 500px;
+    margin-top:80px ;
+}
+.about-submain{
+    height: 880px;
+    width: 100%;
+    margin: 0 auto;
+    background-color:rgb(235, 231, 231)
+}
+.vis-mis{
+    height: 600px;
+    width: 1000px;
+    margin: 0 auto;
+    background-color: #5499bf;
+    line-height: 36px;
+    padding: 40px;
+}
+.vishead{
+    text-align: center;
+}
+.vis-con{
+    font-size: 20px;
+}
+.staff-submain{
+    height: 700px;
+    width:1500px;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.aboutstaff{
+    font-size: 20px;
+    text-align: center;
+    line-height: 30px;
+}
+.staff2{
+    font-size: 30px;
+}
+.staffbox{
+    height: 200px;
+    width: 280px;
+    background-color: white;
+    border: 6px solid transparent;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 100px;
+    margin-left: 70px;
+    font-size: 22px;
+    text-align: center;
+    line-height: 36px;
+}
+.staffbox:hover{
+    border: 6px solid white;
+}
+.aboutcircle{
+    height: 90px;
+    width: 90px;
+    background-color: brown;
+    margin-top: -70px;
+    margin-left: 80px;
+    border-radius: 50px;
+}
+.about-logo1{
+    height: 180px;
+    width: 180px;
+    border-radius: 55%;
+    margin-top: -100px;
+    border: 6px solid white;
+}
+.aboutlogo-2{
+    border-radius: 50%;
+}
+.abt-btn{
+    padding: 3px 10px;
+    border-style: none;
+    background-color: rgb(235, 231, 231);
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    
+}
+.abt-btn:hover{
+    background-color: black;
+    color: white;
+}
+.abt-qual{
+    font-size: 16px;
+    font-weight: 400
+}
+/* #homesubmain li a{
+    color: white;
+    display: ;
+} */
+#homesubmain{
+    height: 200px;
+    width: 150px;
+    background-color: black;
+    margin-left: 960px;
+    margin-top: -10px;
+    line-height: 30px;
+    font-size: 18px;
+    padding: 10px;
+}
+#homesubmain:hover{
+    color: purple;
+}
+#semester:hover #homesubmain{
+    display: block; 
+    /* background-color: aqua;
+    color: black;
+    font-size: 20000px; */
+}
+   
+#homesubmain a{
+    color: white;
+}
+/* --------------------------Year I --------------------------*/
+.yearmain{
+    text-align: center;
+    font-size: 50px;
+    padding: 40px;
+}
+.yearmain button{
+    font-size: 30px;
+    padding: 10px 30px;
+}
+table{
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+th,tr,td{
+    padding: 10px 20px;
+    font-size: 20px;
+}
+.update{
+    background-color: green;
+    padding: 8px;
+    border-radius: 4px;
+    border-style: none;
+}
+/* -------------------------------hardware page index---------------------------------- */
+.hw-index{
+    margin-top: -540px;
+    margin-right: 100px;
+    font-size: 30px;
+    max-width: 1000px;
+}
+/* -------------------------------iot page index---------------------------------- */
+.iot-index{
+    height: 700px;
+    width: 1000px;
+    background-color: rgb(185, 145, 145);
+    margin-left: 400px;
+    margin-top: -550px;
+}
+.iot-index b{
+    font-size: 40px;
+}
+.iot-index img{
+    height: 200px;
+    width: 200px;
+}
+.container .card img{
+    height: 400px;
+    width: 300px;
+    border-radius: 10px;
+}
+.container{
+    display: flex;
+}
+.card{
+    height: 400px;
+    margin: 20px;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+}
+.intro{
+    height: 70px;
+    width: 290px;
+    padding: 6px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 130px;
+    background-color: rgb(18, 17, 17);
+    color: white;
+    line-height: 20px;
+    transition: .5s;
+}
+.intro h1{
+    font-size: 26px;
+    margin: 10px;
+}
+.intro p span{
+    font-weight: bold;
+}
+.intro p{
+    font-size: 17px;
+    margin: 16px;
+    visibility: hidden;
+    opacity: 0x;
+}
+.card:hover{
+    cursor: pointer;
+}
+.card:hover .intro{
+    height: 160px;
+    bottom: 130px;
+}
+.card:hover p{
+    opacity: 1;
+    visibility: visible;
+}
+/* .card:hover img{
+    transform: scale(1.1) rotate(-3deg);
+} */
