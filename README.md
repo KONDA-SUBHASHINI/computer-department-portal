@@ -1,4 +1,4 @@
-Computer Tech Hub – Department Website
+Computer Department Portal
 
 A fully functional Computer Department Website developed using HTML, CSS, JavaScript, PHP, and MySQL.
 This website serves as a centralized portal for students to access department information, technology updates, project ideas, previous question papers, sports events, and alumni details.
